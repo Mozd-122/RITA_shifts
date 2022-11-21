@@ -5,20 +5,17 @@ createServer((req, res) => {
 if(req.method == "GET")
     {
       res.write('received GET request.');
-        res.end("received GET request.")
+        res.end()
     }
 else if(req.method == "POST")
     {
       res.write('received POST request.');
-        res.end("received POST request.");
+        res.end();
     }
 else
     {
       res.write('Undefined request .');
-        res.end("Undefined request .");
+        res.end();
     }
   
-  
-  res.write('Hello World!');
-  res.end();
 }).listen(process.env.PORT);
