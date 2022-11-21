@@ -1,7 +1,8 @@
 import { createServer } from 'http';
 
 createServer((req, res) => {
-  if(req.method == "GET")
+  
+if(req.method == "GET")
     {
       res.write('received GET request.');
         res.end("received GET request.")
@@ -16,8 +17,6 @@ else
       res.write('Undefined request .');
         res.end("Undefined request .");
     }
-});
-  
   
   
   res.write('Hello World!');
